@@ -1,4 +1,4 @@
-﻿module CalculatorFunctionTest
+﻿module CalculatorFunctionTestRefactored
 
 open CalculatorFunctional.CalculatorLibrary
 open NUnit.Framework

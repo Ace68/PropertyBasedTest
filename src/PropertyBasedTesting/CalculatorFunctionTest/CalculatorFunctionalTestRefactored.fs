@@ -11,7 +11,7 @@ let propertyCheck property =
     let x = randInt()
     let y = randInt()
     let result = property x y
-    result = true
+    Assert.That(result, Is.True)
 
 let commutativeProperty x y =
   let result1 = add x y
@@ -20,7 +20,7 @@ let commutativeProperty x y =
   
 [<Test>]
 let addDoesNotDependOnParameterOrder() =
-  propertyCheck commutativeProperty
+  Assert.That(propertyCheck, Is.EqualTo(commutativeProperty))
 
 let add1TwiceIsAdd2Property x _ =
   let result1 = x |> add 1 |> add 1
@@ -29,7 +29,7 @@ let add1TwiceIsAdd2Property x _ =
 
 [<Test>]
 let addOneTwiceIsSameAsAddTwo() =
-  propertyCheck add1TwiceIsAdd2Property
+  Assert.That(propertyCheck, Is.EqualTo(add1TwiceIsAdd2Property))
 
 let identityProperty x _ =
   let result1 = x |> add 0
@@ -37,4 +37,4 @@ let identityProperty x _ =
 
 [<Test>]
 let addZeroIsSameAsDoingNothing() =
-  propertyCheck identityProperty
+  Assert.That(propertyCheck, Is.EqualTo(identityProperty))
