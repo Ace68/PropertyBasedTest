@@ -10,7 +10,7 @@
     <ItemGroup>
         <Compile Include="CalculatorFunctionalTest.fs" />
         <Compile Include="Program.fs"/>
-        <Compile Include="CalculatorFunctionalTestRefactored.fs" />
+        <Compile Include="PropertyBasedTestCalculator.fs" />
     </ItemGroup>
 
     <ItemGroup>

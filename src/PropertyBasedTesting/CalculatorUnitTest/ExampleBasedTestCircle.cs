@@ -2,7 +2,7 @@
 
 namespace CalculatorUnitTest;
 
-public class CircleTests
+public class ExampleBasedTestCircle
 {
     [Theory]
     [InlineData(5)]

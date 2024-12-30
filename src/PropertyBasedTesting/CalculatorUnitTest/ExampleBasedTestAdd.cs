@@ -1,7 +1,6 @@
-﻿using Calculator;
-namespace CalculatorUnitTest;
+﻿namespace CalculatorUnitTest;
 
-public class AddTests
+public class ExampleBasedTestAdd
 {
     [Theory]
     [InlineData(4, 5)]
