@@ -3,7 +3,7 @@ using FsCheck.Xunit;
 
 namespace DiamondTest;
 
-public class DiamondTest
+public class PropertyBasedDiamondTest
 {
     [Property(Arbitrary = [typeof(RandomLetterGenerator)])]
     public Property NotEmpty(char c)

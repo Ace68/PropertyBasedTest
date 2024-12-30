@@ -1,6 +1,6 @@
 ﻿namespace DiamondTest;
 
-public class ClassicDiamondTest
+public class ExampleBasedDiamondTest
 {
     [Fact]
     public void Can_Generate_A_Diamond_With_A()
