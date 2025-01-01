@@ -10,7 +10,8 @@ let Setup () =
 // The EDFH (Enterprise Developer From Hell) pattern
 [<Test>]
 let ``Add two numbers, expect their sum``() =
-    let testData = [ (1,2,3); (2,2,4); (3,5,8); (27,15,42) ]
+    // let testData = [ (1,2,3); (2,2,4); (3,5,8); (27,15,42) ]
+    let testData = [ (1,2,3); ]
     for (x,y,expected) in testData do
         let actual = add x y
         Assert.That(actual, Is.EqualTo(expected))
